@@ -15,3 +15,7 @@ resource "aws_subnet" "subnet_main1" {
     Name = "Main"
   }
 }
+
+output "subnet_id" {
+  value = aws_subnet.subnet_main1.id
+}
